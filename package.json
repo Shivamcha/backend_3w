@@ -1,24 +1,21 @@
 {
   "name": "social-media-task",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "build": "CI=false react-scripts build"
+  "main": "server.js",
+  "engines": {
+    "node": "18.x"  
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm install",
+    "vercel-build": "echo hello"  
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "helmet": "^8.0.0",
     "mongoose": "^8.7.2",
-    "multer": "^1.4.5-lts.1",
-    "react-router-dom": "^6.27.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
+    "multer": "^1.4.5-lts.1"
   }
 }
